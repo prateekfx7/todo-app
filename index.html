@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo App</h1>
+    
+    <!-- Add datetime display -->
+    <div id="datetime-display">
+        <div id="clock">00:00:00</div>
+        <div id="date">Monday, January 1</div>
+    </div>
+
+    <div id="add-task">
+        <input type="text" id="task-input" placeholder="Enter a new task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-container">
+        <h2>Pending Tasks</h2>
+        <div id="pending-tasks"></div>
+    </div>
+
+    <div class="task-container">
+        <h2>Completed Tasks</h2>
+        <div id="completed-tasks"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
